@@ -1,0 +1,84 @@
+.local-e-data{
+    margin-left: auto;
+    margin-right: 0;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+table, th, td{
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+tr{
+    height: 4em;
+}
+th{
+    border-bottom: 2px solid black;
+}
+td{
+    border-bottom: 2px dotted gray;
+}
+.tabela-subtotal{
+    text-align: center;
+    font-weight: bold;
+}
+.borda-fundo-solido{
+    border-bottom: 2px solid black;
+}
+.pagamento{
+    box-sizing: border-box;
+    background-color: #5fb382;
+    color: white;
+    margin: 30px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+.pagamento-container{
+    display: flex;
+    justify-content: center;
+}
+.vitrine{
+    display: flex;
+    flex-wrap: wrap;
+}
+.produto{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.produto img{
+    max-width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+.nome-produto{
+    display: block;
+    font-weight: bold;
+    margin: 20px 0;
+    background-color: yellow;
+    text-align: center;
+    padding: 10px 0;
+}
+.preco-produto{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: blue;
+    margin: 20px;
+}
+.produto a{
+    display: block;
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    color: white;
+    background-color: #5fb382;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
