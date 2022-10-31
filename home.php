@@ -1,19 +1,21 @@
 <h1>Ofertas imperdíveis!</h1>
 <div class="vitrine">
 <?php
-foreach ($items as $id => $valor){
+$xml = simplexml_load_file(__DIR__.'/produtos.xml');
+foreach ($xml->produto as $produto){
     ?>
     <div class="produto">
-        <img src="img/<?=$valor['imagem']?>"/>
-        <div class="nome-produto"><?=$valor['nome']?></div>
-        <div class="preco-produto">R$ <?=number_format($valor['preco'],2,",",".")?></div>
-        <a href="?adicionar=<?=$id?>">Adicionar ao carrinho</a>
+        <img src="img/<?=$produto->imagem?>" title="<?=$produto->nome?>"/>
+        <div class="nome-produto" title="<?=$produto->nome?>"><?=$produto->nome?></div>
+        <div class="preco-produto">R$ <?=number_format((float)$produto->preco,2,",",".")?></div>
+        <a href="?adicionar=<?=$produto->codigo?>">Adicionar ao carrinho</a>
     </div>
     <?php
 }?>
 </div>
 
 <?php
+
 if(isset($_GET['adicionar'])){
     $idProduto = (int) $_GET['adicionar'];
     if(isset($items[$idProduto])){

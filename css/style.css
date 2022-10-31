@@ -50,7 +50,7 @@ td{
     width: 30%;
     margin: auto;
     margin-bottom: 100px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 .produto img{
     max-width: 100%;
@@ -63,10 +63,12 @@ td{
     margin: 20px 0;
     background-color: yellow;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .preco-produto{
-    margin-bottom: 20px;
     font-weight: bold;
     color: blue;
     margin: 20px;

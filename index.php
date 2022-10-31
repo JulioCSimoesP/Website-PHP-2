@@ -1,5 +1,4 @@
 <?php
-require_once('produtos.php');
 session_start();
 ?>
 
