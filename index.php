@@ -37,10 +37,9 @@ session_start();
         </ul>
         <div class="local-e-data">
             <?php
-            //imprimi data atual
             setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
             date_default_timezone_set('America/Sao_Paulo');
-            echo 'Jundiai, ', strftime('%A, %d de %B de %Y', strtotime('today'));
+            echo 'Jundiai, ', utf8_encode(strftime('%A, %d de %B de %Y', strtotime('today')));
             ?>
         </div>
     </div>
@@ -59,6 +58,9 @@ session_start();
                             break;
                         case"carrinho";
                             include("carrinho.php");
+                            break;
+                        case"produto";
+                            include("pagina-produto.php");
                             break;
                         default;
                             include("home.php");

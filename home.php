@@ -2,40 +2,20 @@
 <div class="vitrine">
 <?php
 $xml = simplexml_load_file(__DIR__.'/produtos.xml');
+
 foreach ($xml->produto as $produto){
+    $_SESSION['listaProdutos'][(int)$produto->codigo] = ['nome' => (string)$produto->nome, 'preco' => (string)$produto->preco];
     ?>
     <div class="produto">
-        <img src="img/<?=$produto->imagem?>" title="<?=$produto->nome?>"/>
-        <div class="nome-produto" title="<?=$produto->nome?>"><?=$produto->nome?></div>
+        <a href="?page=produto&codigo=<?=$produto->codigo?>"><img src="img/<?=$produto->imagem?>" title="<?=$produto->nome?>" alt="<?=$produto->nome?>"/></a>
+        <a href="?page=produto&codigo=<?=$produto->codigo?>" class="link-produto"><div class="nome-produto" title="<?=$produto->nome?>"><?=$produto->nome?></div></a>
         <div class="preco-produto">R$ <?=number_format((float)$produto->preco,2,",",".")?></div>
-        <a href="?adicionar=<?=$produto->codigo?>">Adicionar ao carrinho</a>
+        <a href="?adicionar=<?=$produto->codigo?>" class="link-adicionar">Adicionar ao carrinho</a>
     </div>
     <?php
 }?>
 </div>
 
 <?php
-
-if(isset($_GET['adicionar'])){
-    $idProduto = (int) $_GET['adicionar'];
-    if(isset($items[$idProduto])){
-        if(isset($_SESSION['carrinho'][$idProduto])){
-            $_SESSION['carrinho'][$idProduto]['quantidade']++;
-            $_SESSION['subtotal'] += $_SESSION['carrinho'][$idProduto]['preco'];
-            echo '<script>
-                alert("Item adicionado ao carrinho.");
-                window.location = "index.php";
-            </script>';
-        }else{
-            $_SESSION['carrinho'][$idProduto] = array('quantidade'=>1,'preco'=>$items[$idProduto]['preco'],'nome'=>$items[$idProduto]['nome']);
-            $_SESSION['subtotal'] += $_SESSION['carrinho'][$idProduto]['preco'];
-            echo '<script>
-                alert("Item adicionado ao carrinho.");
-                window.location = "index.php";
-            </script>';
-        }
-    }else{
-        die('Id do produto inválido.');
-    }
-}
+require_once('adicionar-produto.php');
 ?>

@@ -22,7 +22,7 @@ if(isset($_SESSION['carrinho'])){
             ?>
         <tr>
             <td>
-                <?=$indice+1;?>
+                <?=$indice;?>
             </td>
             <td>
                 <?=$conteudo['nome'];?>
@@ -50,7 +50,7 @@ if(isset($_SESSION['carrinho'])){
             Ir para o pagamento
         </button>
     </div>
-<?php }else{
-    echo '<h2>Não há nenhum item</h2>';
+<?php } else {
+    echo '<h2 class="aviso">Não há nenhum item no carrinho.</h2>';
 }
 ?>
