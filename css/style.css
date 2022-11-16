@@ -21,7 +21,7 @@ tr{
 th{
     border-bottom: 2px solid black;
 }
-td{
+td, .borda-fundo-pontilhado{
     border-bottom: 2px dotted gray;
 }
 .tabela-subtotal{
@@ -35,7 +35,7 @@ td{
     box-sizing: border-box;
     background-color: #5fb382;
     color: white;
-    margin: 30px;
+    margin-top: 30px;
     padding: 10px 15px;
     font-size: 1.2rem;
     border-radius: 5px;
@@ -43,7 +43,7 @@ td{
 }
 .pagamento-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 .vitrine{
     display: flex;
@@ -96,7 +96,7 @@ td{
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
-.aviso{
+.texto-centro{
     text-align: center;
 }
 .cabecalho-produto{
@@ -140,8 +140,101 @@ td{
 .cor-sub-preco{
     color: darkorange;
 }
-.dados-produto{
+.frame-relevo{
     margin: 70px 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     padding: 5%;
+}
+.flex-horizontal{
+    display: flex;
+    align-items: flex-start;
+}
+.cell-min-width1{
+    min-width: 3em;
+}
+.cell-min-width2{
+    min-width: 7em;
+}
+.cell-min-width3{
+    min-width: 8em;
+}
+.cell-min-width4{
+    min-width: 20em;
+}
+.cupom{
+    box-sizing: border-box;
+    background-color: #75c8fd;
+    color: white;
+    margin: 30px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+.form-cupom{
+    display: flex;
+    justify-content: space-between;
+}
+.input-cupom{
+    width: 50%;
+    height: 3em;
+    align-self: center;
+}
+.submit-cupom{
+    width: 10em;
+}
+.lista-carrinho{
+    max-width: 45rem;
+}
+.container-lista-carrinho{
+    margin: 0 2%;
+}
+.vitrine-carrinho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.remove-margin-top{
+    margin-top: 0;
+}
+.continuar-comprando{
+    box-sizing: border-box;
+    background-color: lightgrey;
+    color: #3b6e52;
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: solid 2px #3b6e52;
+}
+.margin-top{
+    margin-top: 30px;
+}
+.resumo-linha{
+    font-size: 0.9rem;
+    padding: 0 0.7em;
+}
+.resumo-precos{
+    font-size: 1rem;
+    font-weight: bold;
+    float: right;
+}
+.resumo{
+    min-width: 25rem;
+}
+.total-prazo{
+    background: lightgrey;
+    padding: 0.7em;
+}
+.total-vista{
+    background: #c7efd5;
+    color: #3b6e52;
+    padding: 1em 2em;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.valor-vista{
+    font-size: 1.8rem;
 }

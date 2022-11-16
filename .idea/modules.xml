@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Website-PHP-2.iml" filepath="$PROJECT_DIR$/.idea/Website-PHP-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../Xampp/htdocs/.idea/htdocs.iml" filepath="$PROJECT_DIR$/../../../Xampp/htdocs/.idea/htdocs.iml" />
     </modules>
   </component>
 </project>

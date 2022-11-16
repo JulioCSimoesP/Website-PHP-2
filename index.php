@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once ('config.php');
 ?>
 
 <!doctype html>
@@ -25,8 +26,8 @@ session_start();
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=novo">
-                    Cadastrar
+                <a class="nav-link" href="?page=login">
+                    Faça login
                 </a>
             </li>
             <li class="nav-item">
@@ -53,7 +54,7 @@ session_start();
                 <?php
                     include("config.php");
                     switch(@$_REQUEST["page"]){
-                        case"novo";
+                        case"login";
                             include("novo-usuario.php");
                             break;
                         case"carrinho";

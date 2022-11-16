@@ -1,0 +1,22 @@
+[
+  {
+    "codigo": "CUPOM5",
+    "desconto": 0.05,
+    "validade": "15-11-2022"
+  },
+  {
+    "codigo": "CUPOM10",
+    "desconto": 0.1,
+    "validade": "16-11-2022"
+  },
+  {
+    "codigo": "CUPOM15",
+    "desconto": 0.15,
+    "validade": "13-11-2022"
+  },
+  {
+    "codigo": "CUPOM20",
+    "desconto": 0.2,
+    "validade": "11-11-2022"
+  }
+]

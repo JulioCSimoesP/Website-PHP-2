@@ -1,9 +1,9 @@
 <?php
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASS', '');
-define('BASE', 'cadastro');
+$dbHost = 'Localhost:3306';
+$dbUsername = 'root';
+$dbPassword = '';
+$dbName = 'loja';
 
-$conn = new MySQLi(HOST,USER,PASS,BASE);
-
+$conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName)
+or die ("Não foi possível estabelecer uma conexão com localhost. Erro: ".mysql_error());
 ?>

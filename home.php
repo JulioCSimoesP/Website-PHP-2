@@ -4,7 +4,7 @@
 $xml = simplexml_load_file(__DIR__.'/produtos.xml');
 
 foreach ($xml->produto as $produto){
-    $_SESSION['listaProdutos'][(int)$produto->codigo] = ['nome' => (string)$produto->nome, 'preco' => (string)$produto->preco];
+    $_SESSION['listaProdutos'][(int)$produto->codigo] = ['nome' => (string)$produto->nome, 'preco' => (float)$produto->preco, 'precoAPrazo' => (float)$produto->precoAPrazo];
     ?>
     <div class="produto">
         <a href="?page=produto&codigo=<?=$produto->codigo?>"><img src="img/<?=$produto->imagem?>" title="<?=$produto->nome?>" alt="<?=$produto->nome?>"/></a>

@@ -3,6 +3,7 @@
     <produto>
         <nome>Memória Kingston Fury Beast, 32GB (2x16GB), 5600MHz, DDR5, CL40, Preto</nome>
         <preco>2821.9</preco>
+        <precoAPrazo>3034.3</precoAPrazo>
         <imagem>item1.jpg</imagem>
         <descricao>
             Kingston FURY Beast DDR5 a memória traz a mais recente e avançada tecnologia para plataformas de jogos de última geração. Levando velocidade, capacidade e confiabilidade ainda mais longe, a DDR5 chega com um arsenal de recursos melhorados, como on-die ECC (ODECC) para melhorar a estabilidade a velocidades extremas, dual 32-bit subchannels para maior eficiência e circuito integrado de gestão de energia (PMIC) no módulo para fornecer mais energia precisamente quando ela é mais necessária. Avanços de velocidade superior com o dobro de bancos de 16 para 32 e o dobro de comprimento de burst de 8 para 16 levam a memória DDR5, sua experiência de jogos e as aplicações gerais do seu sistema para o próximo nível de desempenho. Seja ultrapassando seus limites no seu jogo com as configurações mais extremas, streaming ao vivo em 4K+ ou trabalhando com grandes animações e renderização 3D, Kingston FURY Beast DDR5 a memória traz 32GB (2x16GB) e é o upgrade necessário, a ponte perfeita para liberar toda performance com estilo. Além disso, utiliza Intel XMP 3.0, uma nova especificação de overclock que inclui dois perfis customizáveis para velocidades e timings.
@@ -46,6 +47,7 @@ Peso:
     <produto>
         <nome>Processador AMD Ryzen Threadripper Pro 5975WX, 128 MB, 32 Núcleos, SP3 WOF</nome>
         <preco>21999.99</preco>
+        <precoAPrazo>23655.9</precoAPrazo>
         <imagem>item2.jpg</imagem>
         <descricao>
             Processador AMD Ryzen Threadripper Pro 5965WX: Estreando nos processadores AMD Ryzen Série 5000 para desktop, a arquitetura “Zen 3” é um redesenho básico da lendária família “Zen”.  Equipado com aprimoramentos de design de ponta a ponta, o “Zen 3” incorpora o foco implacável da AMD no desempenho de núcleo único, eficiência de energia e latências reduzidas. Ele está no centro dos melhores processadores de jogos do mundo. Menor Latência: A arquitetura “Zen 3” faz a transição para um novo design “complexo unificado” que traz 8 núcleos e 32 MB de cache L3 em um único grupo de recursos. Isso reduz drasticamente as latências core-to-core e core-to-cache, tornando cada elemento da matriz um vizinho com tempo mínimo de comunicação. Tarefas sensíveis à latência, como jogos de PC, se beneficiam especialmente dessa mudança, já que as tarefas agora têm acesso direto ao dobro do cache L3 em comparação ao “Zen 2”.
@@ -132,6 +134,7 @@ Peso:
     <produto>
         <nome>Water Cooler NZXT Kraken Z73, Fans de 360mm, com Display LCD, Branco</nome>
         <preco>3327.99</preco>
+        <precoAPrazo>3578.48</precoAPrazo>
         <imagem>item3.jpg</imagem>
         <descricao>
             O cooler líquido All-in-One (AIO) NZXT Kraken Z73 RGB está pronto para CPUs de alto desempenho com capacidade para caber na maioria dos casos. Mostre as temperaturas da CPU / GPU ou personalize com GIFs com o display Kraken Z LCD.
@@ -213,6 +216,7 @@ Peso:
     <produto>
         <nome>Fonte Asus ROG THOR 1600T, 1600W, 80 Plus Platinum, Display LED, Aura Sync, Bivolt, Preto</nome>
         <preco>4599.99</preco>
+        <precoAPrazo>4946.23</precoAPrazo>
         <imagem>item4.jpg</imagem>
         <descricao>
             Fonte Asus ROG Thor: A expressão máxima da Thor possui um núcleo redesenhado que traz maior eficiência de energia, refrigeração aprimorada e menor ruído para plataformas monstruosas que eliminam tudo em seu caminho. Controle de energia digital: Um controlador digital fornece controle preciso sobre a matriz de energia GaN, facilitando uma resposta extremamente rápida às mudanças de carga. Design Aura Sync: A Fonte ROG Thor possui LEDs Auro RGB endereçáveis integrados, prontos para acentuar seu equipamento com uma variedade de cores e efeitos de iluminação.
@@ -265,6 +269,7 @@ Peso:
     <produto>
         <nome>SSD M.2, Gigabyte, Aorus Gen4, 2TB, 5000mbs</nome>
         <preco>4126.41</preco>
+        <precoAPrazo>4437</precoAPrazo>
         <imagem>item5.jpg</imagem>
         <descricao>
             Os SSDs encontrados no site da Tertz foram escolhidos a dedo por nossa equipe. São memórias confiáveis, com qualidade e duráveis.
@@ -295,6 +300,7 @@ Peso:
     <produto>
         <nome>Placa de Vídeo Asus NVIDIA TUF RTX 3090, 24GB, GDDR6X - TUF-RTX3090</nome>
         <preco>26999.99</preco>
+        <precoAPrazo>29032.25</precoAPrazo>
         <imagem>item6.jpg</imagem>
         <descricao>
             NVIDIA Ampere Streaming Multiprocessors: Os blocos de construção para a GPU mais rápida e eficiente, o novo Ampere SM traz o dobro de taxa de transferência FP32 e maior eficiência de energia. 2ª geração de RT Cores: Experimente o dobro de taxa de transferência dos núcleos RT em relação a 1ª geração, mais RT e sombreamento simultâneos para um nível totalmente novo de desempenho de Ray Tracing. 3ª geração Tensor Cores: Obtenha até o dobro do rendimento com dispersão estrutural e algoritmos de Inteligência Artificial avançados, como DLSS. Agora com suporte para resolução de até 8K, esses núcleos oferecem um grande aumento no desempenho dos jogos e recursos de IA totalmente novos. O design das ventoinhas Axial-tech, foi recentemente ajustado, tornando a direção da ventoinha central invertida para menos turbulência. Ventoinhas com Rolamentos duplos podem durar até 2 vezes mais que os designs de mancal deslizante. Capacitores de nível militar e outros componentes TUF aumentam a durabilidade e o desempenho. GPU Tweak II oferece ajustes de desempenho intuitivos, controles térmicos e monitoramento do sistema.
@@ -362,6 +368,7 @@ Peso:
     <produto>
         <nome>Placa-Mãe Asus ROG Crosshair VIII Formula, X570, AMD AM4, ATX, DDR4</nome>
         <preco>4599.99</preco>
+        <precoAPrazo>4946.23</precoAPrazo>
         <imagem>item7.jpg</imagem>
         <descricao>
             A ROG Crosshair VIII Formula oferece conectividade avançada para garantir experiências de jogo ininterruptas. Com a mais recente rede ultra-rápida, incluindo Wi-Fi 6 (802.11ax) e Ethernet dupla com uma porta de 5G, a ROG Crosshair VIII Formula elimina todos os gargalos para a reprodução online e LAN, minimizando o atraso e proporcionando uma experiência geral mais suave. Além disso, o M.2 suporta a tecnologia AMD StoreMI para maximizar a velocidade do seu SSD para carregamentos mais rápidos, e o áudio on-board SupremeFX oferece excelente som, enquanto economiza um slot PCIe.
