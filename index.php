@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('config.php');
 ?>
 
 <!doctype html>
@@ -26,9 +25,16 @@ include_once ('config.php');
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="?page=login">
-                    Faça login
-                </a>
+                <?php
+                if(isset($_SESSION['usuario']) && $_SESSION['usuario']['logado'] == true) {
+                    echo '<a class="nav-link" href="?page=conta">Olá, '.$_SESSION['usuario']['nome'].'</a>
+                        <div>
+                           <a href="?page=conta">Minha conta</a>      
+                           <a href="logout.php">Logout</a>
+                        </div>';
+                } else {
+                    echo '<a class="nav-link" href="?page=login">Faça login'.'</a>';
+                }?>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="?page=carrinho">
@@ -55,7 +61,22 @@ include_once ('config.php');
                     include("config.php");
                     switch(@$_REQUEST["page"]){
                         case"login";
-                            include("novo-usuario.php");
+                            include("login.php");
+                            break;
+                        case"cadastro";
+                            include("cadastro.php");
+                            break;
+                        case"conta";
+                            include("conta.php");
+                            break;
+                        case"dados";
+                            include("dados.php");
+                            break;
+                        case"alterar";
+                            include "alterar.php";
+                            break;
+                        case"aviso";
+                            include("aviso.php");
                             break;
                         case"carrinho";
                             include("carrinho.php");
@@ -70,12 +91,6 @@ include_once ('config.php');
             </div>
         </div> 
     </div>
-
-    
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
-    
-
 </body>
 </html>

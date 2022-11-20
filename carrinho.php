@@ -94,7 +94,7 @@ if(isset($_SESSION['carrinho'])){
         <div class="frame-relevo remove-margin-top resumo">
             <h2>Resumo</h2>
             <p class="margin-top resumo-linha">
-                Valor à prazo:<span class="resumo-precos">&nbsp R$ <?=number_format($_SESSION['subtotalAPrazo'],2,",",".")?></span>
+                Subtotal à prazo:<span class="resumo-precos">&nbsp R$ <?=number_format($_SESSION['subtotalAPrazo'],2,",",".")?></span>
             <hr>
             <p class="resumo-linha">Frete:<span class="resumo-precos">R$ 0,00</span></p>
             <hr>
