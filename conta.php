@@ -4,12 +4,20 @@ if(isset($_SESSION['usuario']) && $_SESSION['usuario']['logado'] == true) {
     header("Location: index.php");
 }?>
 <h1>Bem vindo, <?=$_SESSION['usuario']['nome']?></h1>
-<section>
-    <a href="?page=dados">Meus dados</a>
-</section>
-<section>
-    <a href="?page=alterar">Alterar senha</a>
-</section>
-<section>
-    <a href="?page=aviso">Encerrar conta</a>
-</section>
+<div class="vitrine-carrinho">
+    <a href="?page=dados" class="no-deco">
+        <section class="frame-relevo link-conta">
+            <p class="margin-bottom-reset">Meus dados</p>
+        </section>
+    </a>
+    <a href="?page=alterar" class="no-deco">
+        <section class="frame-relevo link-conta">
+            <p class="margin-bottom-reset">Alterar senha</p>
+        </section>
+    </a>
+    <a href="?page=aviso" class="no-deco">
+        <section class="frame-relevo link-conta">
+            <p class="margin-bottom-reset">Encerrar conta</p>
+        </section>
+    </a>
+</div>

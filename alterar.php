@@ -17,12 +17,12 @@ if($google == 1) {
 }
 ?>
 <h1>Alterar senha</h1>
-<section>
+<section class="frame-relevo frame-aviso frame-senha">
     <p>Preencha os campos abaixo para realizar a alteração da sua senha</p>
     <form action="alterar-senha.php" method="post">
-        <label for="senhaAtual">Digite a senha atual: <input type="password" name="senhaAtual" placeholder="Senha atual" <?php if($google == 1){echo "value='$senhaGoogle'";}?> required></label>
-        <label for="senhaNova">Digite a senha nova: <input type="password" name="senhaNova" placeholder="Senha nova" required></label>
-        <label for="confirma">Confirme a senha nova: <input type="password" name="confirma" placeholder="Confirmação" required></label>
-        <input type="submit" value="Salvar">
+        <input type="password" class="input-senha" name="senhaAtual" placeholder="Digite sua senha atual" <?php if($google == 1){echo "value='$senhaGoogle'";}?> required><br>
+        <input type="password" class="input-senha" name="senhaNova" placeholder="Digite sua senha nova" required><br>
+        <input type="password" class="input-senha" name="confirma" placeholder="Confirme sua senha nova" required><br>
+        <input type="submit" value="Salvar" class="botao-voltar margin-top2">
     </form>
 </section>

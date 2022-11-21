@@ -3,7 +3,7 @@ session_start();
 include_once('config.php');
 
 if(isset($_SESSION['usuario']) && $_SESSION['usuario']['logado'] == true) {
-    if(isset($_POST['nome']) && isset($_POST['sobrenome']) && isset($_POST['telefone']) && isset($_POST['sexo']) && isset($_POST['nascimento']) && isset($_POST['cidade']) && isset($_POST['estado']) && isset($_POST['endereco'])) {
+    if(isset($_POST['nome']) || isset($_POST['sobrenome']) || isset($_POST['telefone']) || isset($_POST['sexo']) || isset($_POST['nascimento']) || isset($_POST['cidade']) || isset($_POST['estado']) || isset($_POST['endereco'])) {
         $nome = $_POST['nome'];
         $sobrenome = $_POST['sobrenome'];
         $email = $_SESSION['usuario']['email'];

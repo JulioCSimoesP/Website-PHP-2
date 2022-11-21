@@ -24,11 +24,11 @@ session_start();
                     Home
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
                 <?php
                 if(isset($_SESSION['usuario']) && $_SESSION['usuario']['logado'] == true) {
-                    echo '<a class="nav-link" href="?page=conta">Olá, '.$_SESSION['usuario']['nome'].'</a>
-                        <div>
+                    echo '<a class="nav-link dropbtn" href="?page=conta">Olá, '.$_SESSION['usuario']['nome'].'</a>
+                        <div class="dropdown-content">
                            <a href="?page=conta">Minha conta</a>      
                            <a href="logout.php">Logout</a>
                         </div>';
